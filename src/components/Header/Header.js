@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./header.css";
 import logo from "./todoLogo.png";
+import _ from "lodash";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 import { logout } from "../../redux/reducer";
 import Logout from "../Auth/Logout/Logout";
 
@@ -19,10 +20,19 @@ class Header extends Component {
   };
 
   render() {
+    console.log();
     return (
       <div className="header">
         <img src={logo} alt="" />
-        <Logout logout={() => this.logoutFn()} />
+        {_.isEmpty(this.props.user) !== true ? (
+          <Logout logout={() => this.logoutFn()} />
+        ) : (
+          <div className="nav-bar">
+            <NavLink to="/login">Login</NavLink>
+            <br />
+            <NavLink to="/register">Register</NavLink>
+          </div>
+        )}
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./login.css";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { login, getUser } from "../../../redux/reducer";
+import { login, getUser, getUserTodos } from "../../../redux/reducer";
 
 class Login extends Component {
   constructor(props) {
@@ -24,6 +24,8 @@ class Login extends Component {
     const { username, password } = this.state;
     let user = { username, password };
     this.props.login(user);
+    // this.props.getUser();
+    this.props.getUserTodos();
     this.props.history.push("/todo-list");
   };
 
@@ -65,7 +67,8 @@ const mapStateToProps = reduxState => {
 
 const mapDispatchToProps = {
   login: login,
-  getUser: getUser
+  getUser: getUser,
+  getUserTodos: getUserTodos
 };
 
 export default connect(

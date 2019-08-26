@@ -19,7 +19,6 @@ class TodoDisplay extends Component {
   };
 
   render() {
-    console.log(this.props);
     const bg =
       "https://cdn3.iconfinder.com/data/icons/simplius-pack/512/pencil_and_paper-512.png";
     const background =

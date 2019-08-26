@@ -12,6 +12,6 @@ export default (
     <Route component={TodoList} path="/todo-list" />
     <Route component={Register} path="/register" />
     <Route component={Login} path="/login" />
-    <Route component={Home} exact path="/" />
+    <Route component={Home} path="/" />
   </Switch>
 );
