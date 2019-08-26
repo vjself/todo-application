@@ -1,0 +1,1 @@
+UPDATE todos SET title = $1, description = $2 WHERE todo_id = $3;

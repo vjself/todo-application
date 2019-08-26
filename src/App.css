@@ -1,0 +1,137 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.main {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  background-color: rgba(201, 201, 201, 0.212);
+  box-shadow: 1px 1px 5px grey;
+  z-index: 0;
+}
+
+.cont {
+  width: 80%;
+}
+
+.edit-window {
+  box-shadow: 1px 1px 3px grey;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.edit-window input {
+  background-color: transparent;
+  line-height: 24px;
+  font-size: 20px;
+  margin: 20px 20px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.edit-window a {
+  color: black;
+  font-size: 12px;
+}
+
+.edit-button {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+.add-inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: auto auto;
+  position: relative;
+}
+
+.add-id {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+#edit-input {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.todo-instance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  padding: 10px;
+  border: solid rgba(128, 128, 128, 0.445) 1px;
+  margin: 20px 0 20px 0;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.completed-t {
+  background-color: rgb(16, 219, 60);
+  color: white;
+}
+
+.completed-f {
+  background-color: grey;
+  color: white;
+}
+
+#delete-button {
+  box-shadow: 2px 2px 3px grey;
+}
+
+.completed-f,
+.completed-t {
+  margin-right: 10px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.completed-f:hover,
+.completed-t:hover {
+  cursor: pointer;
+}
+.e-d-butd {
+  display: flex;
+  align-items: center;
+}
+.cont {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  width: 80%;
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.d-button {
+  margin-left: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  box-shadow: 2px 2px 3px grey;
+}
