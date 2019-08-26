@@ -41,8 +41,10 @@ class TodoList extends Component {
     });
     return (
       <div className="cont">
+        <h2>Add a task:</h2>
         <CreateTodo />
-        {list}
+        <br></br>
+        <div className="todos-container">{list}</div>
       </div>
     );
   }

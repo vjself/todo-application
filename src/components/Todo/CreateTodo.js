@@ -60,6 +60,10 @@ class CreateTodo extends Component {
               this.state.description,
               completed
             );
+            this.setState({
+              title: "",
+              description: ""
+            });
           }}
         />
       </div>

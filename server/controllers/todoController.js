@@ -51,14 +51,6 @@ module.exports = {
   },
   markComplete: async (req, res) => {
     const { todoId, completed } = req.body;
-    console.log(
-      "TODO ID",
-      todoId,
-      "Completed",
-      completed,
-      "req session",
-      req.session.user.id
-    );
 
     try {
       let todos = await req.app

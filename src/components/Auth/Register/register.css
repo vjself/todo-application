@@ -1,0 +1,21 @@
+.reg-form input {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: auto auto;
+  position: relative;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+  line-height: 32px;
+  font-size: 18px;
+}
+
+.reg-form {
+  margin-top: 1em;
+}
+.reg-form button {
+  width: 100%;
+  font-size: 1.3em;
+  padding: 1em;
+}

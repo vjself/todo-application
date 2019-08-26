@@ -33,7 +33,7 @@ class Register extends Component {
   render() {
     const { email, first_name, last_name, username, password } = this.state;
     return (
-      <section className="reg-cont">
+      <section className="home">
         <div className="welcome">
           Already have and account? Log in <NavLink to="/login">here.</NavLink>
         </div>
@@ -80,11 +80,13 @@ class Register extends Component {
               onChange={e => this.changeHandler(e.target.name, e.target.value)}
             />
             <br />
-            <input
+            <button
               type="submit"
               value="Submit"
               onClick={() => this.register()}
-            />
+            >
+              Submit
+            </button>
           </form>
         </div>
       </section>

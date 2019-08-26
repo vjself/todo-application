@@ -1,19 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./home.css";
 
 export default function Home() {
   return (
     <div className="home">
-      <span className="welcome">Welcome to TODO! Login </span>
-      <nav id="login-btn">
-        <NavLink to="/login">HERE</NavLink>.
-      </nav>
+      <span className="welcome">
+        Welcome to TODO! Login <NavLink to="/login">HERE</NavLink>.{" "}
+      </span>
+
       <br />
       <div>
-        <span className="welcome">Don't have an account? Register</span>{" "}
-        <nav id="navbtn">
-          <NavLink to="/register">HERE</NavLink>.
-        </nav>
+        <span className="welcome">
+          Don't have an account? Register <NavLink to="/register">HERE</NavLink>
+          .
+        </span>{" "}
       </div>
     </div>
   );
